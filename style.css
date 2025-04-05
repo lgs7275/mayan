@@ -1,0 +1,73 @@
+/* 전체 기본 스타일 */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* 헤더 스타일 */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+/* 네비게이션 바 */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #34495e;
+    gap: 0.5rem; /* ✅ 링크 사이 간격 추가 */
+    flex-wrap: wrap; /* ✅ 줄바꿈 대응 */
+    padding: 0.5rem 0;
+}
+
+nav a {
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    font-size: 1.1rem; /* ✅ 글자 크기 키움 */
+}
+
+nav a:hover {
+    background-color: #2c3e50;
+}
+
+/* 공통 섹션 및 메인 콘텐츠 */
+main, section {
+    max-width: 800px;
+    margin: 2rem auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    animation: fadeInUp 0.8s ease;
+}
+
+/* 섹션 제목 스타일 */
+h2 {
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+/* 애니메이션 */
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* 푸터 */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #2c3e50;
+    color: white;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
